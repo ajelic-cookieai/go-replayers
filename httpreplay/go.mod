@@ -1,4 +1,4 @@
-module github.com/google/go-replayers/httpreplay
+module github.com/ajelic-cookieai/go-replayers/httpreplay
 
 go 1.16
 
@@ -10,18 +10,4 @@ require (
 	google.golang.org/api v0.47.0
 )
 
-require (
-	cloud.google.com/go v0.82.0 // indirect
-	github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e // indirect
-	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/googleapis/gax-go/v2 v2.0.5 // indirect
-	github.com/jstemmer/go-junit-report v0.9.1 // indirect
-	go.opencensus.io v0.23.0 // indirect
-	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
-	golang.org/x/text v0.8.0 // indirect
-	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
-	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20210517163617-5e0236093d7a // indirect
-	google.golang.org/grpc v1.37.1 // indirect
-	google.golang.org/protobuf v1.26.0 // indirect
-)
+require github.com/google/go-replayers/httpreplay v1.2.0
