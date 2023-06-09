@@ -128,7 +128,7 @@ func newProxy(filename, c, k string) (*Proxy, error) {
 		if config != nil {
 			config.SetValidity(100 * time.Hour)
 			config.SetOrganization("github.com/google/go-replayers/httpreplay")
-			config.SkipTLSVerify(false)
+			config.SkipTLSVerify(true)
 		}
 	})
 	if configErr != nil {
