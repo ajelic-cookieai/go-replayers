@@ -25,6 +25,7 @@ import (
 	"reflect"
 	"sync"
 
+	mlog "github.com/google/martian/v3/log"
 	"github.com/google/martian/v3/martianlog"
 )
 
@@ -55,6 +56,8 @@ func ForReplaying(filename string, port int, cert, key string) (*Proxy, error) {
 	logger.SetDecode(true)
 	p.mproxy.SetRequestModifier(logger)
 	p.mproxy.SetResponseModifier(logger)
+
+	mlog.SetLevel(mlog.Debug)
 
 	if err := p.start(port); err != nil {
 		return nil, err
